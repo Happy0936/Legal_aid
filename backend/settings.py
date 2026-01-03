@@ -1,3 +1,6 @@
+DEBUG = False
+ALLOWED_HOSTS = ["*"]
+
 
 INSTALLED_APPS = [
     # ...existing code...
@@ -11,8 +14,12 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
+        'rest_framework.permissions.AllowAny',
     ],
 }
+
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # ...existing code...
