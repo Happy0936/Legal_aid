@@ -4,6 +4,20 @@ Legal Aid is a platform designed to make the Indian legal system easy to underst
 
 ---
 
+##  Live Demo
+
+🔹 **Frontend (Vercel)**  
+👉 https://legal-aid-six.vercel.app  
+
+🔹 **Backend API (Render)**  
+👉 https://legal-aid-apgl.onrender.com  
+
+🔹 **Admin Panel**  
+👉 https://legal-aid-apgl.onrender.com/admin/
+
+
+---
+
 ## Features
 
 ### Legal Advice/QAs
@@ -52,22 +66,25 @@ Before starting, ensure the following are installed on your system:
 - **Git** (for version control)
 
 ---
+## **Frontend Setup (React + Vite)**
+   ```bash
+   cd frontend
+   npm install
+   npm run dev
+   ```
+
+---
 
 ## **Backend Setup (Django)**
 
 1. **Clone the Repository**  
    Clone the repository:
    ```bash
-   git clone https://github.com/Vishal-KumarSingh/legal-aid.git](https://github.com/Abhinandan-iitb/Legal_aid.git
-   cd legal-aid
+   git clone https://github.com/Happy0836/Legal_aid.git
+   cd Legal_aid
    ```
-2. **Start the npm**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-3 **Start the server**
+
+2. **Start the server**
 ```bash
 cd backend
 pip install -r requirements.txt
