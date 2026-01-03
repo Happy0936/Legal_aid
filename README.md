@@ -35,12 +35,27 @@ Legal Aid is a platform designed to make the Indian legal system easy to underst
 - **Learn About IPC**: Understand the Indian Penal Code in simple terms.
 - **Know Your Rights**: Discover your legal rights and explore practical legal solutions in an easy-to-understand format.
 
+### Community
+- Ask questions.
+- Read community-driven answers.
+
 ---
 
 ## Why Choose Legal Aid?
 - **User-Friendly**: Designed for everyone, from legal professionals to everyday citizens.
 - **Empowering**: Helps people make informed legal decisions with confidence.
 - **Reliable**: All content is based on verified laws and expert insights.
+
+
+---
+
+## Tech Stack
+- **Frontend**: React + TypeScript + Vite + Tailwind CSS.
+- **Backend**: Django + Django REST Framework.
+- **Database**: SQLite.
+- **Deployment**:
+  - Frontend → Vercel
+  - Backend → Render
 
 ---
 
@@ -66,6 +81,15 @@ Before starting, ensure the following are installed on your system:
 - **Git** (for version control)
 
 ---
+
+## **Clone the Repository**  
+   Clone the repository:
+   ```bash
+   git clone https://github.com/Happy0836/Legal_aid.git
+   cd Legal_aid
+   ```
+
+---
 ## **Frontend Setup (React + Vite)**
    ```bash
    cd frontend
@@ -76,15 +100,7 @@ Before starting, ensure the following are installed on your system:
 ---
 
 ## **Backend Setup (Django)**
-
-1. **Clone the Repository**  
-   Clone the repository:
-   ```bash
-   git clone https://github.com/Happy0836/Legal_aid.git
-   cd Legal_aid
-   ```
-
-2. **Start the server**
+ **Start the server**
 ```bash
 cd backend
 pip install -r requirements.txt
