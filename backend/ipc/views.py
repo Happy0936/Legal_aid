@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from rest_framework.authtoken.models import Token
 from django.core.paginator import Paginator
+from django.http import JsonResponse
 
 @api_view(['GET'])
 def getAll(request):
@@ -336,5 +337,8 @@ def aisearch(query):
     top_index = similarities.argsort()[0][-1]
     result_row = ipc_data.iloc[top_index]
     return result_row['Description']
+
+def test_api(request):
+    return JsonResponse({"status": "Backend API working"})
 
 
