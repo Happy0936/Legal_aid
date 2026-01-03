@@ -19,7 +19,10 @@ class NetworkService {
     }
    
 
-    fetch("http://127.0.0.1:8000/" + url, fetchOptions)
+    onst BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
+    fetch(`${BASE_URL}/${url}`, fetchOptions)
+      
     .then(response => {
       if (!response.ok) {
         return response.json().then(err => { throw err });
