@@ -1,14 +1,15 @@
-FROM  python:3.8.13-bullseye
+FROM python:3.10-slim
 
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /
+WORKDIR /app
 
-RUN pip install django django-cors-headers
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# copy from the current directory of the Dockerfile to /api in the image
-COPY . . 
+COPY . .
 
 EXPOSE 8000
 
-RUN ["python", "manage.py", "runserver"]
+CMD ["gunicorn", "wsgi:application", "--bind", "0.0.0.0:8000"]
+
