@@ -17,9 +17,7 @@ class NetworkService {
     if (method !== 'GET') {
       fetchOptions.body = JSON.stringify(body);
     }
-   
-
-    const BASE_URL = import.meta.env.VITE_API_BASE_URL;
+   const BASE_URL = import.meta.env.VITE_API_BASE_URL as string;
 
     fetch(`${BASE_URL}/${url}`, fetchOptions)
       
