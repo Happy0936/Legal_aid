@@ -3,8 +3,13 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = False
-ALLOWED_HOSTS = ["*"]
+DEBUG = True
+ALLOWED_HOSTS = [
+    "legal-aid-apgl.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
+
 
 
 INSTALLED_APPS = [
