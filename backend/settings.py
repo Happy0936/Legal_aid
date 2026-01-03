@@ -23,8 +23,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-
-ROOT_URLCONF = "main.urls"
+ROOT_URLCONF = "backend.urls"
 
 
 
