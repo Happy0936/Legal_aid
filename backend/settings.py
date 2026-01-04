@@ -4,12 +4,8 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-temp-key-1234567890"
 
-DEBUG = True
-ALLOWED_HOSTS = [
-    "legal-aid-apgl.onrender.com",
-    "localhost",
-    "127.0.0.1",
-]
+DEBUG = False
+ALLOWED_HOSTS = [*]
 
 DATABASES = {
     'default': {
